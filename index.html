@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>Form</title>
+
+    <link rel="stylesheet" type="text/css" href="dateform.css">
+
+</head>
+
+<body>
+
+    <div id="container">
+        <form id="form">
+            <h1 style="text-align: center;">Application For Permission To Date</h1>
+
+            <p style="text-align: center;">Note: Form is to be completed at least 21 days prior to date.</p>
+
+            <!-- Personal details -->
+            <div class="pd-flex">
+                <fieldset class="fieldset">
+                    <legend>Personal Details</legend>
+
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" size="20" placeholder="Tom..." id="name" required>
+                    </div><br>
+
+                    <div>
+                        <label for="address">Address</label>
+                        <input type="text" size="100" placeholder="House No..." id="address" required>
+                    </div><br>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="text" size="20" placeholder="abc@gmail.com" id="email">
+                    </div><br>
+
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input type="text" size="20" placeholder="+81 123456" id="phone">
+                    </div><br>
+
+                    <div>
+                        <label for="iq">IQ</label>
+                        <input type="text" size="20" placeholder="123" id="iq">
+                    </div><br>
+
+                    <!-- Radio Buttons -->
+
+                    <div>
+                        <label for="Gender"><b>Gender</b></label><br>
+                        <label for="male">Male</label>
+                        <input type="radio" value="Male" id="male" name="gender" checkek><br>
+                        <label for="female">Female</label>
+                        <input type="radio" value="Female" id="female" name="gender" checkek><br>
+                        <label for="other">Other</label>
+                        <input type="radio" value="Other" id="other" name="gender" checkek>
+                    </div><br>
+
+                    <div>
+                        <label for="date">Date :</label>
+                        <input type="date" id="date">
+                    </div><br>
+                </fieldset>
+            </div>
+
+            <!-- Checked Box -->
+            <div class="pd-flex">
+                <fieldset class="fieldset">
+                    <legend>Neccessary Information</legend>
+                    <input type="checkbox" name="smoking" type="smoking">Smoke<br>
+                    <input type="checkbox" name="alcohol" type="alcohol">Alcohol<br>
+                    <input type="checkbox" name="disease" type="disease">Disease<br>
+                    <input type="checkbox" name="pubbing" type="pubbing">Pubbing<br>
+                </fieldset>
+            </div>
+
+            <!-- Political  -->
+            <div class="pd-flex dropdown">
+                <fieldset class="fieldset">
+                    <legend style="text-align: left;">Thinking</legend>
+                    <label for="political">Political Pursuation</label>
+                    <select id="political">
+                        <option>Rightist</option>
+                        <option>Leftist</option>
+                        <option>Communist</option>
+                        <option>Nationalist</option>
+                    </select>
+
+                    <label for="extra">Extra Affairs</label>
+                    <select id="extra">
+                        <option>Yes</option>
+                        <option>No</option>
+                    </select>
+
+                    <label for="how-many">How Many</label>
+                    <select id="how-many">
+                        <option>One</option>
+                        <option>Two</option>
+                        <option>More</option>
+                        <option>Can't Figureout</option>
+                    </select>
+                </fieldset>
+            </div>
+
+            <!-- Essay -->
+
+            <div class="pd-flex">
+                <fieldset class="fieldset">
+                    <legend>Essay</legend>
+                    <p>Tell me something about yourself and why should I date you?</p>
+                    <label for="despription-box">Description Box</label><br>                    
+                    <textarea rows="5" cols="100" id="despription-box" placeholder="Hello..."></textarea>
+                    <br><br>
+
+                    <p>Upload Police Clearance Certificate, Bank Statement and Medical Certifiates here: <input type="submit" value="Upload"></p>                   
+                </fieldset>
+            </div>
+
+            <div class="pd-flex butt">
+                <button type="submit">Send your application</button>  
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </form> <!-- form end -->
+    </div> <!-- container -->
+
+
+</body>
+
+</html>
